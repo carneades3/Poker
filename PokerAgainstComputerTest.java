@@ -10,9 +10,9 @@ public class PokerAgainstComputerTest {
       
       PokerAgainstComputer pokerAgainstComputer = new PokerAgainstComputer(printStream, false);
       
-      for (int gamesCounter = 0; gamesCounter < 10; ) {
+      for (int gamesCounter = 1; gamesCounter <= 10; gamesCounter++) {
          //PokerAgainstComputer pokerAgainstComputer = new PokerAgainstComputer(printStream, false);
-         printStream.printf("     -------     GAME NUMBER %d %n", ++gamesCounter);
+         printStream.printf("     -------     GAME NUMBER %d %n", gamesCounter);
          pokerAgainstComputer.run();
          gameScore = pokerAgainstComputer.getGameScore();
          
